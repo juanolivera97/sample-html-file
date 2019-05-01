@@ -124,6 +124,11 @@
             <li><del>Call Mom</del></li>
             <li class="Done">Buy tickets</li>
             <li>Do homework</li>
+            <ul>
+                <li>English exercises</li>
+                <li>FED exercises</li>
+                <li>Read about HTML syntax</li>
+            </ul>
         </ul>
     </section>
 
@@ -365,14 +370,17 @@
             <input type="email" id="email" placeholder="Enter your email address">
             <br>
             <label for="mood">Your mood:</label>
-            <selection required id="mood">
+            <select required id="mood">
                 <option value="">--Please choose an option--</option>
                 <option value="happy">Happy</option>
                 <option value="sad">Sad</option>
-            </selection>
+                <option value="angry">Angry</option>
+                <option value="anxious">Anxious</option>
+                <option value="excited">Excited</option>
+            </select>
             <br>
             <label for="message">Message:</label>
-            <areatext id="message" placeholder="What's on your mind?"></areatext>
+            <textarea id="message" placeholder="What's on your mind?"></textarea>
             <br>
             <button type="submit">Send message</button>
         </form>
